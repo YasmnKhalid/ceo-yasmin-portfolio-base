@@ -1,0 +1,14 @@
+# Node & Build Stuff
+node_modules
+.next
+dist
+
+# Environment files
+.env
+
+# System files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
