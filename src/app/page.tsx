@@ -6,27 +6,12 @@ import ProjectCard from './components/ProjectCard'
 import AboutPage from './about/page'
 import useDarkMode from './hooks/useDarkMode';
 import Image from 'next/image'
+import { projects } from './components/projectData'
+import Timeline from './components/Timeline'
+import SocialLinks from './components/socialLink'
+import EmailCard from './components/EmailCard'
 
-const projects = [
-  {
-    title: "Julie Caretaker App",
-    description: "A mobile app to manage care routines for patients. Built using Flutter and Firebase.",
-    tech: ["Flutter", "Firebase", "Firestore"],
-    link: "https://github.com/ceoyasmin/julie-app",
-  },
-  {
-    title: "Dashboard UI (React + Zustand)",
-    description: "Frontend dashboard with Zustand-powered state, loading spinner and charts.",
-    tech: ["React", "Tailwind", "Zustand"],
-    link: "https://github.com/ceoyasmin/dashboard-ui",
-  },
-  {
-    title: "Crypto Portfolio Tracker",
-    description: "Track your Web3 assets with live market data and wallet connect features.",
-    tech: ["Next.js", "CoinGecko API", "Firebase"],
-    link: "https://github.com/ceoyasmin/crypto-tracker",
-  },
-];
+
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -122,6 +107,16 @@ export default function Home() {
         <AboutPage />
       </motion.section>
 
+      <section
+        id="skills"
+        className="py-20 bg-gray-50 dark:bg-gray-800 text-center"
+      >
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <Timeline />
+        </div>
+      </section>
+
+
 
       {/* Project Section */}
       <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
@@ -160,15 +155,20 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-emerald-600">Contact Me</h2>
-          <p className="text-gray-700">
-            Email me at{" "}
-            <a className="underline text-emerald-600" href="mailto:khalidyasmin821@gmail.com">
-              khalidyasmin821@gmail.com
-            </a>
-          </p>
+          {/* <h2 className="text-3xl font-bold mb-8 text-emerald-600">Contact Me</h2> */}
+
+          <EmailCard />
         </div>
       </motion.section>
+
+
+
+      <footer className="mt-20 pb-10">
+        <SocialLinks />
+        <p className="text-sm flex justify-center text-gray-500 dark:text-gray-400 mt-4">
+          &copy; 2025 Yasmin Khalid. All rights reserved.
+        </p>
+      </footer>
     </main>
   );
 }

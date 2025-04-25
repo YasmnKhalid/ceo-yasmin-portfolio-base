@@ -32,7 +32,7 @@ const projects = [
 export default function ProjectCard({ title, description, tech, link }: ProjectCardProps) {
   return (
     <motion.div
-     className="rounded-lg p-6 border border-gray-200 bg-white shadow-sm hover:border-emerald-400 hover:ring-2 hover:ring-emerald-300/60 hover:shadow-md transition"
+      className="rounded-lg p-6 border border-gray-200 bg-white shadow-sm hover:border-emerald-400 hover:ring-2 hover:ring-emerald-300/60 hover:shadow-md transition"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -45,11 +45,28 @@ export default function ProjectCard({ title, description, tech, link }: ProjectC
           <span key={i} className="bg-emerald-100 px-2 py-1 rounded">{t}</span>
         ))}
       </div>
-      {link && (
+      {/* {link && (
         <a href={link} target="_blank" className="inline-block mt-4 text-emerald-500 underline">
           View Project →
         </a>
-      )}
+      )} */}
+      <div className="flex gap-3 mt-4 ">
+        <a
+          href="https://your-live-site.vercel.app"
+          target="_blank"
+          className="px-4 py-2 text-sm bg-emerald-500 text-white rounded hover:bg-emerald-600 transition"
+        >
+          View Live
+        </a>
+        <a
+          href="https://github.com/ceoyasmin/your-project"
+          target="_blank"
+          className="px-4 py-2 text-sm bg-gray-100 text-gray-700 rounded hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 transition"
+        >
+          View Code
+        </a>
+      </div>
+
     </motion.div>
   );
 }
