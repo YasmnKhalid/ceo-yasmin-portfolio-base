@@ -23,7 +23,10 @@ export default function useDarkMode() {
       localStorage.setItem('theme', 'light')
     }
     setDarkMode(newTheme)
+    
   }
 
   return { darkMode, toggle }
+
+  
 }

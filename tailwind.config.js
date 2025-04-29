@@ -6,7 +6,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'minty': '#e7ffe3', 
+      },
+    },
   },
   plugins: [],
 }
+
+// #efffe3

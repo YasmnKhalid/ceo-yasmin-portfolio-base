@@ -34,10 +34,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="scroll-smooth">
+    <main className="scroll-smooth bg-minty dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+
       {/* Hero Section */}
       <section
-        className="h-screen flex items-center justify-center px-4 bg-white dark:bg-gray-900"
+        className="h-screen flex items-center justify-center px-4 dark:bg-gray-900"
         id="home"
       >
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -51,7 +52,6 @@ export default function Home() {
             opacity-70 dark:opacity-30
             top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
-
 
             {/* Profile Image */}
             <motion.div
@@ -98,7 +98,7 @@ export default function Home() {
       {/* About Section */}
       <motion.section
         id="about"
-        className="h-screen flex items-center justify-center bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100"
+        className="h-screen flex items-center justify-center dark:bg-gray-900 text-gray-800 dark:text-gray-100"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -107,9 +107,10 @@ export default function Home() {
         <AboutPage />
       </motion.section>
 
+      {/* Education Section */}
       <section
-        id="skills"
-        className="py-20 bg-gray-50 dark:bg-gray-800 text-center"
+        id="education"
+        className="py-20 bg-minty dark:bg-gray-900 text-center"
       >
         <div className="max-w-4xl mx-auto px-4 text-center">
           <Timeline />
@@ -119,7 +120,7 @@ export default function Home() {
 
 
       {/* Project Section */}
-      <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+      <section id="projects" className="py-20 px-4 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
         <h2 className="text-3xl font-bold mb-8 text-emerald-600 text-center">My Projects</h2>
 
         <div className="relative">
@@ -136,8 +137,10 @@ export default function Home() {
                     title={project.title}
                     description={project.description}
                     tech={project.tech}
-                    link={project.link}
+                    liveLink={project.liveLink}
+                    codeLink={project.codeLink}
                   />
+
                 </div>
               ))}
             </div>
@@ -148,27 +151,24 @@ export default function Home() {
       {/* Contact Section */}
       <motion.section
         id="contact"
-        className="h-screen flex items-center justify-center bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100"
+        className="h-screen flex items-center justify-center dark:bg-gray-900 text-gray-800 dark:text-gray-100"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}
       >
         <div className="max-w-4xl mx-auto px-4 text-center">
-          {/* <h2 className="text-3xl font-bold mb-8 text-emerald-600">Contact Me</h2> */}
-
           <EmailCard />
         </div>
       </motion.section>
 
-
-
-      <footer className="mt-20 pb-10">
+      <footer className="mt-20 pb-10 dark:bg-gray-900">
         <SocialLinks />
         <p className="text-sm flex justify-center text-gray-500 dark:text-gray-400 mt-4">
           &copy; 2025 Yasmin Khalid. All rights reserved.
         </p>
       </footer>
+
     </main>
   );
 }

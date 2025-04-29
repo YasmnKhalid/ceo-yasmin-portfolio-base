@@ -27,7 +27,7 @@ const timeline = [
 
 const Timeline = () => {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-800 text-center" id="skills">
+    <section className="py-20 bg-minty dark:bg-gray-900 text-center" id="skills">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-emerald-600 dark:text-emerald-400">
           Education
@@ -43,7 +43,7 @@ const Timeline = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex-shrink-0 w-[220px] snap-center text-center relative bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md transition-transform ver:border-emerald-400 hover:ring-2 hover:ring-emerald-300/60 hover:shadow-md transition"
+                className="flex-shrink-0 w-[220px] snap-center text-center relative bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md transition-transform ver:border-emerald-400 hover:ring-2 hover:ring-emerald-300/60 hover:shadow-md transition"
               >
                 {/* Year */}
                 <div
