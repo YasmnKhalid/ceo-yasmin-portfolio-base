@@ -30,7 +30,7 @@ const Navbar = () => {
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <a
-            href="/yasmin-cv.pdf"
+            href="Yasmin Khalid.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-emerald-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 transition"

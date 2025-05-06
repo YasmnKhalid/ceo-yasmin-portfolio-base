@@ -6,13 +6,13 @@ export const projects = [
     liveLink: "", // leave empty if work in progress!
     codeLink: "https://github.com/YasmnKhalid/juliemobiile",
   },
-  // {
-  //   title: "Dashboard UI (React + Zustand)",
-  //   description: "Frontend dashboard with Zustand-powered state, loading spinner and charts.",
-  //   tech: ["React", "Tailwind", "Zustand"],
-  //   liveLink: "", // no live yet
-  //   codeLink: "",
-  // },
+  {
+    title: "Yasmin Khalid Porfolio Website",
+    description: "",
+    tech: ["React", "Tailwind", "Zustand"],
+    liveLink: "", // no live yet
+    codeLink: "",
+  },
   {
     title: "Julie Caretaker App (FYP)",
     description: "A React-based caretaker dashboard to manage patient routines, built for final year project. Uses Firebase for real-time data and authentication.",
