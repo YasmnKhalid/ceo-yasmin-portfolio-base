@@ -26,7 +26,7 @@ export default function ProjectCard({ title, description, tech, liveLink, codeLi
 
   return (
     <motion.div
-      className="rounded-lg p-6 border border-gray-200 bg-white shadow-sm hover:border-emerald-400 hover:ring-2 hover:ring-emerald-300/60 hover:shadow-md transition 
+      className="flex flex-col justify-between h-full rounded-lg p-6 border border-gray-200 bg-white shadow-sm hover:border-emerald-400 hover:ring-2 hover:ring-emerald-300/60 hover:shadow-md transition 
                dark:border-gray-700 dark:bg-gray-800 dark:hover:border-emerald-400 dark:hover:ring-emerald-400/40"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -50,13 +50,19 @@ export default function ProjectCard({ title, description, tech, liveLink, codeLi
           <button
             onClick={handleViewLive}
             className={`px-4 py-2 text-sm rounded transition ${liveLink
-                ? 'bg-emerald-500 text-white hover:bg-emerald-600'
-                : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              ? 'bg-emerald-500 text-white hover:bg-emerald-600'
+              : 'bg-gray-300 text-gray-500 cursor-not-allowed'
               }`}
             disabled={!liveLink}
           >
             View Live
           </button>
+          {/* Custom Tooltip for Portfolio */}
+          {title === 'Yasmin Khalid Porfolio Website' && (
+            <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-max text-xs bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity z-10">
+              you are here! 👀
+            </span>
+          )}
 
           {/* Tooltip */}
           {!liveLink && (
@@ -71,8 +77,8 @@ export default function ProjectCard({ title, description, tech, liveLink, codeLi
           href={codeLink || '#'}
           target="_blank"
           className={`px-4 py-2 text-sm rounded transition ${codeLink
-              ? 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
-              : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+            ? 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+            : 'bg-gray-300 text-gray-500 cursor-not-allowed'
             }`}
           onClick={(e) => {
             if (!codeLink) e.preventDefault();

@@ -20,6 +20,7 @@ const Navbar = () => {
         <h1 className="text-xl font-bold text-emerald-600 dark:text-emerald-400">Yasmin Khalid</h1>
         <div className="space-x-6 text-sm font-medium text-gray-700 dark:text-gray-300">
           <a href="#about" className="hover:text-emerald-600 dark:hover:text-emerald-400">About</a>
+          <a href="#education" className="hover:text-emerald-600 dark:hover:text-emerald-400">Education</a>
           <a href="#projects" className="hover:text-emerald-600 dark:hover:text-emerald-400">Projects</a>
           <a href="#contact" className="hover:text-emerald-600 dark:hover:text-emerald-400">Contact</a>
           <button

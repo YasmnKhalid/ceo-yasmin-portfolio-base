@@ -118,33 +118,25 @@ export default function Home() {
       </section>
 
 
-
       {/* Project Section */}
       <section id="projects" className="py-20 px-4 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
         <h2 className="text-3xl font-bold mb-8 text-emerald-600 text-center">My Projects</h2>
 
         <div className="relative">
-          {/* SLIDER */}
-          <motion.div
-            ref={scrollRef}
-            className="flex overflow-x-auto gap-6 snap-x snap-mandatory pb-6 scroll-smooth"
-            whileTap={{ cursor: "grabbing" }}
-          >
-            <div className="flex gap-6">
-              {projects.map((project, index) => (
-                <div className="min-w-[300px] snap-center" key={index}>
-                  <ProjectCard
-                    title={project.title}
-                    description={project.description}
-                    tech={project.tech}
-                    liveLink={project.liveLink}
-                    codeLink={project.codeLink}
-                  />
-
-                </div>
-              ))}
-            </div>
-          </motion.div>
+          {/* Responsive Grid (instead of scroll) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <div key={index} className="flex">
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  tech={project.tech}
+                  liveLink={project.liveLink}
+                  codeLink={project.codeLink}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

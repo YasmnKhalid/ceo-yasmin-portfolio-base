@@ -2,23 +2,23 @@ export const projects = [
   {
     title: "Julie Caretaker App",
     description: "A mobile app to manage care routines for patients. Built using Flutter and Firebase.",
-    tech: ["Flutter", "Firebase", "Firestore"],
-    liveLink: "", // leave empty if work in progress!
+    tech: ["Flutter", "Firebase", "Firestore", "Dart"],
+    liveLink: "",
     codeLink: "https://github.com/YasmnKhalid/juliemobiile",
   },
   {
     title: "Yasmin Khalid Porfolio Website",
-    description: "",
-    tech: ["React", "Tailwind", "Zustand"],
-    liveLink: "", // no live yet
-    codeLink: "",
+    description: "A personal portfolio website showcasing my projects, skills, and passion in building apps. Designed with modern UI, responsive layout, and dark mode support",
+    tech: ["Next.js", "Tailwind", "Typescript","Framer Motion"],
+    liveLink: "http://yasmin-khalid-portfolio.vercel.app/", 
+    codeLink: "https://github.com/YasmnKhalid/ceo-yasmin-portfolio-base",
   },
   {
     title: "Julie Caretaker App (FYP)",
     description: "A React-based caretaker dashboard to manage patient routines, built for final year project. Uses Firebase for real-time data and authentication.",
     tech: ["React", "Firebase", "Tailwind", "Firestore"],
-    liveLink: "", // you can add Vercel or Netlify link later
-    codeLink: "https://github.com/YasmnKhalid/FYPJulie", // update if your GitHub repo is different
+    liveLink: "", 
+    codeLink: "https://github.com/YasmnKhalid/FYPJulie",
   }
   // {
   //   title: "Crypto Portfolio Tracker",
@@ -28,3 +28,4 @@ export const projects = [
   //   codeLink: "",
   // },
 ];
+ 
