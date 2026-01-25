@@ -78,16 +78,17 @@ export default function Home() {
               Hi, I’m Yasmin Khalid!
             </h1>
             <p className="text-gray-700 dark:text-gray-300 text-lg max-w-md">
-              I build apps and websites, teach kids, and lead like a boss. Let’s build the future together 🚀
+              {/* I build apps and websites, teach kids, and lead like a boss. Let’s build the future together 🚀 */}
+               I’ll showcase my proudest coding projects here. Stay tuned!
             </p>
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <a
                 href="#contact"
                 className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md text-sm shadow-md transition"
               >
                 Let’s Work Together!
               </a>
-            </div>
+            </div> */}
 
           </div>
         </div>
@@ -95,7 +96,7 @@ export default function Home() {
 
 
 
-      {/* About Section */}
+      {/* About Section 
       <motion.section
         id="about"
         className="h-screen flex items-center justify-center dark:bg-gray-900 text-gray-800 dark:text-gray-100"
@@ -105,9 +106,9 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <AboutPage />
-      </motion.section>
+      </motion.section> */}
 
-      {/* Education Section */}
+      {/* Education Section 
       <section
         id="education"
         className="py-20 bg-minty dark:bg-gray-900 text-center"
@@ -115,15 +116,15 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <Timeline />
         </div>
-      </section>
+      </section>*/}
 
 
-      {/* Project Section */}
+      {/* Project Section 
       <section id="projects" className="py-20 px-4 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
         <h2 className="text-3xl font-bold mb-8 text-emerald-600 text-center">My Projects</h2>
 
         <div className="relative">
-          {/* Responsive Grid (instead of scroll) */}
+          {/* Responsive Grid (instead of scroll)
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <div key={index} className="flex">
@@ -137,8 +138,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </div> */}
 
       {/* Contact Section */}
       <motion.section
