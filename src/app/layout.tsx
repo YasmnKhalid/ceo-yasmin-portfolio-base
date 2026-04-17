@@ -1,18 +1,18 @@
-'use client'
-import Navbar from './components/Navbar'
-import useDarkMode from './hooks/useDarkMode'
-import './styles/globals.css';
+import '../styles/globals.css';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const metadata = {
+  title: 'Yasmin Portfolio',
+  description: 'Portfolio of Yasmin Khalid',
+};
 
-  const { darkMode } = useDarkMode();
-
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={darkMode ? 'dark' : ''}>
-      <body>
-         <Navbar/> 
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
-  )
+  );
 }
