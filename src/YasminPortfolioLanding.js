@@ -222,10 +222,10 @@ export default function YasminPortfolioLanding() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href="mailto:yasmin@example.com" className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5">
+              <a href="mailto:khalidyasmin821@gmail.com" className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5">
                 Email Me
               </a>
-              <a href="https://www.linkedin.com" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+              <a href="https://www.linkedin.com/in/ysmnkhalid/" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
                 LinkedIn
               </a>
             </div>
