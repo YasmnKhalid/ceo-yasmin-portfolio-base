@@ -1,6 +1,6 @@
 # 🌐 Yasmin Khalid Portfolio
 
-Welcome to my personal portfolio website — built to showcase my projects, technical skills, and professional experience as a **Full Stack Developer**.
+Welcome to my personal portfolio website : built to showcase my projects, technical skills, and professional experience as a **Full Stack Developer**.
 
 ---
 
